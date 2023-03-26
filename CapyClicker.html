@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        #tout {
+            background-image: url("bg.PNG");
+        }
+
+        #cliquetotal {
+            top: 30px;
+            left: 20px;
+            width: 70px;
+            height: 30px;
+            position: fixed;
+        }
+        #me {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+    <title>CapyClicker</title>
+
+    <link rel="icon" href="favicon.png" sizes="48px,48px">
+</head>
+
+<body id="tout" class="text-white">
+
+    <div id="cliquetotal" class="w-25">
+        Vos CapyCoins :
+        <input type="text" id="nbclick" value="0" class="text-center" readonly>
+    </div>
+
+
+
+    <div class="text-center mt-5 pb-5">
+       <h2>Clique sur ton Capybara</h2> 
+    </div>
+
+        
+        <div class="row d-flex justify-content-center">
+            <div class="col col-12 col-md-auto">
+                <div id="me">
+                <img id="mebtn" class="rounded-circle img-fluid clickable-image" src="capybb.png">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class=" col col-12 col-md-auto">
+                <button id="niv2" type="button" class="btn btn-success">Niveau 2 (30 CC)</button>
+                <button id="niv3" type="button" class="btn btn-success d-none">Niveau 3 (250 CC)</button>
+                <button id="niv4" type="button" class="btn btn-success d-none">Niveau 4 (700 CC)</button>
+                <button id="niv5" type="button" class="btn btn-success d-none">Niveau 5 (2000 CC)</button>
+                <button id="niv6" type="button" class="btn btn-success d-none">Niveau 6 (10000 CC)</button>
+                <h3 id="win" class="d-none text-center">BRAVO tu as gagné !</h3>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/CapyClicker.js"></script>
+</body>
+
+</html>
